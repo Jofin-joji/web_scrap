@@ -127,7 +127,6 @@ download_images(
         "Mohanlal hd",
         "Mohanlal movie scenes",
         "Mohanlal photoshoot",
-        "Mohanlal single_image"
     ],
     save_name="Mohanlal",
     num_images=10000
