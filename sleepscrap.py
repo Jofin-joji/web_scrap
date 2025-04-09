@@ -83,7 +83,7 @@ def download_images(search_terms, save_name, num_images=1000, save_folder="image
         keyword = search_terms[term_index % len(search_terms)]
         remaining = num_images - downloaded_count
         batch = min(batch_size, remaining)
-        print(f"\n🚀 Batch {batch_number + 1}: Searching for '{keyword}' to fetch {batch} images...")
+        print(f"\n🚀 Batch {batch_number + 1}: Searching for '{keyword}' to fetch {batch} images....")
 
         image_urls = fetch_image_urls(keyword, batch, seen_urls)
         if not image_urls:
@@ -129,5 +129,5 @@ download_images(
         "Mohanlal photoshoot",
     ],
     save_name="Mohanlal",
-    num_images=10000
+    num_images=1000
 )
