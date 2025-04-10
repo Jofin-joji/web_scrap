@@ -124,7 +124,6 @@ download_images(
         "Mohanlal awards",
         "Mohanlal actor",
         "Mohanlal potraits",
-        "Mohanlal hd",
         "Mohanlal movie scenes",
         "Mohanlal photoshoot",
     ],
