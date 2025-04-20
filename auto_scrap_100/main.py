@@ -13,7 +13,7 @@ from mtcnn.mtcnn import MTCNN # Import MTCNN
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 
-# --- Configuration ---
+
 IMAGES_FOLDER = "images"
 FACE_DATASET_FOLDER = "face_dataset"
 GROUP_FACE_FOLDER = "group_face"
@@ -54,7 +54,7 @@ def get_new_celebrity_names():
         data = json.loads(parsed_data)  # Parse the JSON string into a Python list of dictionaries
         celebrities = [item["celebrity"] for item in data]  # Extract the celebrity names using the correct key
         print("Celebrities:", celebrities)
-    except json.JSONDecodeError as e:  # Catch JSON parsing errors specifically
+    except json.JSONDecodeError as e:  
         print(f"Error parsing JSON: {e}")
         celebrities = []
     except Exception as e:
@@ -75,7 +75,7 @@ def start_scraping(celebrity_count, images_per_folder):
                     f"{celebrity} awards",
                     f"{celebrity} actor",
                     f"{celebrity} potraits",
-                    f"{celebrity} hd",
+                    
                     f"{celebrity} movie scenes",
                     f"{celebrity} photoshoot",
                 ],
