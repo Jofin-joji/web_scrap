@@ -9,7 +9,7 @@ import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 
-# Suppress unverified HTTPS warnings
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def create_session():
@@ -53,7 +53,7 @@ def download_image(url, folder, person_name, seen_hashes, session, bad_domains, 
                     f.write(img_bytes)
                 return file_path
         except Exception as e:
-            time.sleep(2)  # brief wait before retry
+            time.sleep(2)  
 
     bad_domains.add(parsed.netloc)
     return None
