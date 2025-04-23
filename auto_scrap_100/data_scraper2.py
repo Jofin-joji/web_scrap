@@ -146,7 +146,7 @@ if __name__ == "__main__":
             "Benedict Cumberbatch awards",
             "Benedict Cumberbatch actor",
             "Benedict Cumberbatch potraits",
-            "Benedict Cumberbatch hd",
+            
             "Benedict Cumberbatch movie scenes",
             "Benedict Cumberbatch photoshoot",
         ],
