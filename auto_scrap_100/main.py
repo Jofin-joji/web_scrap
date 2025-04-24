@@ -50,7 +50,7 @@ def get_new_celebrity_names():
 
     try:
         parsed_data = response.candidates[0].content.parts[0].text
-        #print(parsed_data)
+       
         data = json.loads(parsed_data)  # Parse the JSON string into a Python list of dictionaries
         celebrities = [item["celebrity"] for item in data]  # Extract the celebrity names using the correct key
         print("Celebrities:", celebrities)
@@ -75,7 +75,6 @@ def start_scraping(celebrity_count, images_per_folder):
                     f"{celebrity} awards",
                     f"{celebrity} actor",
                     f"{celebrity} potraits",
-                    
                     f"{celebrity} movie scenes",
                     f"{celebrity} photoshoot",
                 ],
