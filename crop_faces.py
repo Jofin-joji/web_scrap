@@ -11,7 +11,7 @@ PADDING_FACTOR = 0.2 # Add 20% padding around the detected face box (0 = no padd
 MIN_FACE_SIZE = (30, 30) # Minimum size of face to detect (helps filter noise)
 SAVE_JPEG_QUALITY = 95 # Quality for saving JPEG images (0-100, higher is better)
 
-# --- Initialization ---
+
 
 # Check if Haar Cascade file exists
 if not os.path.exists(HAAR_CASCADE_PATH):
