@@ -7,7 +7,7 @@ INPUT_BASE_DIR = 'images'  # Directory containing celebrity folders
 OUTPUT_BASE_DIR = 'cropped_pics' # Directory where cropped faces will be saved
 HAAR_CASCADE_PATH = 'haarcascade_frontalface_default.xml' # Path to the downloaded Haar Cascade file
 TARGET_SIZE = (224, 224) # Desired output size (width, height) for cropped faces
-PADDING_FACTOR = 0.2 # Add 20% padding around the detected face box (0 = no padding)
+PADDING_FACTOR = 0.2 
 MIN_FACE_SIZE = (30, 30) # Minimum size of face to detect (helps filter noise)
 SAVE_JPEG_QUALITY = 95 # Quality for saving JPEG images (0-100, higher is better)
 
