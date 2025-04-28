@@ -131,7 +131,7 @@ for celebrity_name in os.listdir(INPUT_BASE_DIR):
             # Resize the cropped face to the target size with high-quality interpolation
             resized_face = cv2.resize(cropped_face, TARGET_SIZE, interpolation=cv2.INTER_AREA if (w*h > TARGET_SIZE[0]*TARGET_SIZE[1]) else cv2.INTER_CUBIC)
 
-            # Save the resized face
+           
             # For JPEG, add quality parameter
             if output_filepath.lower().endswith(('.jpg', '.jpeg')):
                  cv2.imwrite(output_filepath, resized_face, [cv2.IMWRITE_JPEG_QUALITY, SAVE_JPEG_QUALITY])
