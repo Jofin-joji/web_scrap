@@ -80,7 +80,7 @@ Images are saved into images/Celebrity_Name/.
 The process repeats until the target number of celebrity folders (defined by celebrity_count in main.py, default 100) is reached in the images/ directory.
 Direct Scraper Usage (Optional): You can also use data_scraper2.py directly if you want to scrape images for a specific list of search terms without the AI component. See the example usage within the if **name** == "**main**": block in data_scraper2.py.
 
-the face cropping can alternately done by running the python script copy_faces.py.
+The face cropping can alternately done by running the python script copy_faces.py, which detects faces and crops the face and store in a directory.
 
 Configuration (main.py & data_scraper2.py)
 main.py:
@@ -91,6 +91,7 @@ save_folder: The root directory where celebrity folders will be created (default
 threads: Number of concurrent download workers.
 batch_size: How many images to attempt fetching URLs for in each search cycle.
 pause_time: Seconds to wait between batches.
+
 Disclaimer
 This script is intended for educational purposes and creating datasets for personal projects.
 Please be mindful of website terms of service and copyright laws when downloading images.
