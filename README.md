@@ -21,6 +21,7 @@ File Structure
 ├── images/ # Default output directory for downloaded images
 │ └── Celebrity_Name_1/
 │ └── Celebrity_Name_2/
+└── Celebrity_Name_3/
 │ └── ...
 ├── main.py # Main script to orchestrate AI name generation and scraping
 ├── data_scraper2.py # Core image scraping and downloading logic (used by main.py)
